@@ -25,23 +25,40 @@ header{
 }
 .logo{
     margin-left: 2%;
-    width: 10%;
+    width: 15%;
 }
 header h3{
     font-size: 30px;
 }
 .header-nav{
-    width: 80%;
-    margin-right: 2%;
+    width: 83%;
+    display: flex;
+    justify-content: space-between;
+    /* margin-right: 20%; */
 }
-header input{
-    width: 700px;
+.header-input-wrap{
+    width: 70%;
+    
+}
+.header-input{
+    width: 100%;
     height: 30px;
     border: 10px ;
     display: inline-block;
     margin-right: 3%;
     border-radius: 6px;
     background-color:rgb(179, 166, 166);
+}
+.icons-wrap{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 5%;
+}
+.icon img{
+    width: 30px;
+    height: 30px;
+    padding-right: 3%;
 }
 /* section styling */
 .body-wrap{
@@ -165,9 +182,18 @@ h4{
 .item-php{
     margin: 20px 0px;
 }
-@media (max-width: 1200px){    
+
+
+/* tablet view styling */
+@media (max-width: 1200px){ 
+    header h3{
+        font-size: 20px;
+    }   
     header input{
         width: 80%
+    }
+    .header-input{
+        margin-right: 0;
     } 
     .sort-wrap{
         width: 80%;
@@ -194,15 +220,15 @@ h4{
         display: block;
         padding-left: 2%;
     }
-    header input{
+    .header-input{
         width: 80%;
-        margin-left: 3%;
+        /* margin-left: 3%; */
     }
     .body-wrap{
         display:block;
     }
     .side-nav{
-        width: 50%;
+        width: 100%;
         display:block;
         flex-direction: column;
         margin:0px 0px;
