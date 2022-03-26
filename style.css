@@ -22,6 +22,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
+    padding-right: 5%;
 }
 .logo{
     margin-left: 2%;
@@ -31,9 +32,10 @@ header h3{
     font-size: 30px;
 }
 .header-nav{
-    width: 83%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     /* margin-right: 20%; */
 }
 .header-input-wrap{
@@ -45,20 +47,20 @@ header h3{
     height: 30px;
     border: 10px ;
     display: inline-block;
-    margin-right: 3%;
+    /* margin-right: 3%; */
     border-radius: 6px;
     background-color:rgb(179, 166, 166);
 }
 .icons-wrap{
-    width: 30%;
+    width: 20%;
     display: flex;
     justify-content: space-around;
-    margin-left: 5%;
+    /* margin-left: 5%; */
 }
 .icon img{
-    width: 30px;
-    height: 30px;
-    padding-right: 3%;
+    width: 20px;
+    height: 20px;
+    padding-right: 2%;
 }
 /* section styling */
 .body-wrap{
@@ -103,6 +105,8 @@ header h3{
 .rating p{
     font-weight: bold;
 }
+
+
 /* content-wrap styling */
 .content-wrap{
     display: block;
@@ -148,6 +152,8 @@ h4{
     list-style: none;
    padding: 5px;
 }
+
+
 /* item-wrap styling */
 .item-wrap{
     display: flex;
@@ -186,23 +192,33 @@ h4{
 
 /* tablet view styling */
 @media (max-width: 1200px){ 
+    .header-nav{
+        width: 100%;
+    }
     header h3{
         font-size: 20px;
-    }   
+    } 
+    .header-input-wrap{
+        margin-left: 4%;
+    }  
     header input{
         width: 80%
     }
     .header-input{
         margin-right: 0;
     } 
-    .sort-wrap{
+    /* .sort-wrap{
         width: 80%;
-    }
+    } */
     .sort{
         width: 10%;
     }
     .nav{
         width: 65%;
+    }
+    .side-nav{
+        display: flex;
+        flex-wrap:wrap;
     }
     .item{
             width:47%;
@@ -215,14 +231,32 @@ h4{
 /* mobile view */
 
 @media (max-width:760px){
-
+   .logo{
+    margin-bottom: 5%;
+    }
     header{
         display: block;
         padding-left: 2%;
     }
+    .header-input-wrap{
+        width: 70%;
+        
+    }
+    .icons-wrap{
+        width: 30%;
+    }
+    .header-nav{
+        width: 100%;
+    }
+    .header-input-wrap{
+        margin-left: 0;
+    } 
     .header-input{
-        width: 80%;
+        width: 100%;
         /* margin-left: 3%; */
+    }
+    a .icon{
+        padding-left:10px ;
     }
     .body-wrap{
         display:block;
@@ -237,20 +271,32 @@ h4{
         margin-bottom: 20px ;
     }
     .sort-wrap{
-        width: 100%;
+        /* width: 100%; */
+        display:block
     }
     .sort{
-        width: 15%;
+        width: 100%;
     }
     .nav{
-        width: 80%;
+        width: 100%;
     }
     .category ul{
         display: flex;
+        flex-wrap: wrap;
     }
     .category ul a li{
         display: inline-block;
         margin-right: 13px;
+    }
+    .nav ul a, .nav ul select{
+        background-color: rgb(179, 166, 166);
+        display: inline-block;
+        border-radius: 10px;
+        margin-left: 1%;  
+    }
+    .nav ul a li, .nav ul select{
+        font-size: 14px;
+       padding: 4px;
     }
     .minimum-price input{
         width: 20%;
